@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 23rem;
+      background-color: hsl(0, 0%, 12%);
+      padding: 20px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      color: hsl(0, 0%, 100%);
+      font-family: Inter, Arial;
+      border-radius: 0.8rem;
+    }
+
+    .profile-picture-container{
+      width: 5rem;
+      height: 5rem;
+      justify-content: center;
+      display: flex;
+      border-radius: 5rem;
+      overflow: hidden;
+    }
+
+    .profile-picture{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .button-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      width: 85%;
+    }
+
+    .name{
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 0.1lh;
+    }
+
+    .location{
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1lh;
+    }
+
+    .description{
+      font-size: 0.8rem;
+      line-height: 3.5lh;
+    }
+
+    .social-link{
+      background-color: hsl(0, 0%, 20%);
+      color: white;
+      font-weight: 600;
+      font-size: 0.8rem;
+      border-style: none;
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.9rem;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container">
+      <figure class="profile-picture-container">
+        <img class="profile-picture" src="jubilee-photo.jpeg" alt="photo of Jubilee Lin">
+      </figure>
+      
+      <h1 class="name">Jubilee Lin</h1>
+      <section class="location">Tempe, Arizona</section>
+      <section class="description">"Front-end developer and word game enthusiast."</section>
+      <section class="button-container">
+        <a href="https://github.com/jubileelin" target="_blank"><button class="social-link">Github</button></a>
+        <a href="https://www.frontendmentor.io/profile/jubileelin" target="_blank"><button class="social-link">Frontend Mentor</button></a>
+        <a><button class="social-link">LinkedIn</button></a>
+        <a href="https://www.instagram.com/cherries.jubileee/?next=%2F" target="_blank"><button class="social-link">Instagram</button></a>
+      </section>
+
+    </section>
+
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
