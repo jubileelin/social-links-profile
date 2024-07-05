@@ -1,0 +1,87 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  background-color: hsl(0, 0%, 12%);
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: hsl(0, 0%, 100%);
+  font-family: Inter, Arial;
+  border-radius: 0.8rem;
+}
+
+@media(max-width: 400px) {
+  .container{
+    width: 19rem;
+  }
+}
+
+.profile-picture-container{
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  display: flex;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.profile-picture{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  width: 85%;
+}
+
+.name{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 0.1lh;
+}
+
+.location{
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1lh;
+  color: rgb(155, 155, 155);
+}
+
+.description{
+  font-size: 0.8rem;
+  line-height: 3.5lh;
+}
+
+.social-link{
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-style: none;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.social-link:hover{
+  background-color: rgb(122, 0, 0);
+}
